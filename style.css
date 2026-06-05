@@ -274,11 +274,10 @@ body::before{
 /* Layout */
 
 .rose{
-    position:absolute !important;
-    top:80px !important;
-    left:30% !important;
-    right:auto !important;
-    transform:none !important;
+    position:absolute;
+    top:80px;
+    left:30%;
+    border:5px solid red;
 }
 .orchid{
     top:80px;
@@ -300,6 +299,4 @@ body::before{
     left:50%;
     transform:translateX(-50%);
 }
-.rose{
-    border:5px solid red !important;
-}
+
