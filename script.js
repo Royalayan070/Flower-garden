@@ -76,3 +76,8 @@ function showFinalMessage(){
     
     document.getElementById("popup").style.display = "block";
 }
+function updateProgress(){
+
+    document.getElementById("progress").innerText =
+    openedFlowers.length + " / 5 flowers discovered 🌸";
+}
