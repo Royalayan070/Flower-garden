@@ -1,83 +1,92 @@
+// Tracks which flowers have been opened
 let openedFlowers = [];
 
-function openMessage(type){
+// Updates the progress text
+function updateProgress() {
 
-    const popup =
-    document.getElementById("popup");
+    document.getElementById("progress").innerText =
+        openedFlowers.length + " / 5 petals collected 🌸";
+}
 
-    const title =
-    document.getElementById("popupTitle");
+// Opens a flower message
+function openMessage(type, event) {
 
-    const text =
-    document.getElementById("popupText");
+    const popup = document.getElementById("popup");
+    const title = document.getElementById("popupTitle");
+    const text = document.getElementById("popupText");
 
     const messages = {
 
-    strawberry: {
-        title: "🍓 Apology",
-        text: "This is where your apology goes. Explain what happened, why it hurt her, and what you'll do differently."
-    },
+        strawberry: {
+            title: "🍓 Strawberry",
+            text: "PUT YOUR APOLOGY HERE"
+        },
 
-    rose: {
-        title: "🌹 Admiration",
-        text: "This is where you write everything you admire about her."
-    },
+        rose: {
+            title: "🌹 Rose",
+            text: "PUT YOUR ADMIRATION MESSAGE HERE"
+        },
 
-    tulip: {
-        title: "🌷 Gratefulness",
-        text: "This is where you thank her for the things she's done for you."
-    },
+        tulip: {
+            title: "🌷 Tulip",
+            text: "PUT YOUR GRATITUDE MESSAGE HERE"
+        },
 
-    bougainvillea: {
-        title: "🌺 Memories",
-        text: "This is where you tell your favorite memories together."
-    },
+        bougainvillea: {
+            title: "🌺 Bougainvillea",
+            text: "PUT YOUR FAVORITE MEMORY HERE"
+        },
 
-    orchid: {
-        title: "🌸 Inspiration",
-        text: "This is where you tell her how she has inspired you to grow."
-    }
-};
+        orchid: {
+            title: "🌸 Orchid",
+            text: "PUT YOUR INSPIRATION MESSAGE HERE"
+        }
+    };
 
-    title.innerText =
-    messages[type].title;
+    title.innerText = messages[type].title;
+    text.innerText = messages[type].text;
 
-    text.innerText =
-    messages[type].text;
+    popup.style.display = "block";
 
-    popup.style.display =
-    "block";
+    // Mark flower as opened
+    if (!openedFlowers.includes(type)) {
 
-    if(!openedFlowers.includes(type))
         openedFlowers.push(type);
 
-    if(openedFlowers.length === 4)
-    {
-        document
-        .getElementById("moonContainer")
-        .style.display="block";
+        updateProgress();
+
+        // Makes clicked flower glow
+        event.target.classList.add("opened");
+    }
+
+    // Unlock moon after all flowers are opened
+    if (openedFlowers.length === 5) {
+
+        const moon =
+            document.getElementById("moonContainer");
+
+        moon.style.display = "block";
+
+        setTimeout(() => {
+            moon.style.opacity = "1";
+        }, 100);
     }
 }
 
-function closePopup(){
+// Closes popup
+function closePopup() {
 
-    document
-    .getElementById("popup")
-    .style.display="none";
+    document.getElementById("popup").style.display = "none";
 }
 
-function showFinalMessage(){
+// Final moon message
+function showFinalMessage() {
 
     document.getElementById("popupTitle").innerText =
-    "🌙 Moonlight";
+        "🌙 Moonlight";
 
     document.getElementById("popupText").innerText =
-    "Every flower here carries a piece of what I wanted to tell you. My apology, my admiration, my gratitude, the memories we share, and the ways you've inspired me. None of this was made because I expect immediate forgiveness. I made it because you matter to me, and because I never want you to doubt that. Thank you for taking the time to walk through this little garden.";
-    
-    document.getElementById("popup").style.display = "block";
-}
-function updateProgress(){
+        "Every flower here carries a piece of what I wanted to tell you. My apology, my admiration, my gratitude, the memories we share, and the ways you've inspired me. None of this was made because I expect anything in return. I made it because you matter to me.";
 
-    document.getElementById("progress").innerText =
-    openedFlowers.length + " / 5 flowers discovered 🌸";
+    document.getElementById("popup").style.display = "block";
 }
