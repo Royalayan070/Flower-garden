@@ -265,6 +265,10 @@ body::before{
     font-size:15px;
     opacity:.9;
 }
+.strawberry .flower-label{
+    position:relative;
+    top:-35px;
+}
 }
 
 /* Layout */
