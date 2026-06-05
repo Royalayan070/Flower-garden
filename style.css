@@ -251,7 +251,7 @@ body::before{
 .garden{
     position:relative;
     width:100%;
-    height:550px;
+    height:700px;
     margin-top:40px;
 }
 
@@ -289,7 +289,7 @@ body::before{
 }
 
 .strawberry{
-    top:400px;
+    top:330px;
     left:50%;
     transform:translateX(-50%);
 }
