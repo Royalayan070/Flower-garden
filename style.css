@@ -294,7 +294,7 @@ body::before{
 }
 
 .strawberry{
-    top:400px;
+    top:370px;
     left:50%;
     transform:translateX(-50%);
 }
