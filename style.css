@@ -261,9 +261,10 @@ body::before{
 }
 
 .flower-label{
-    margin-top:8px;
+    margin-top:0px;
     font-size:15px;
     opacity:.9;
+}
 }
 
 /* Layout */
