@@ -13,26 +13,31 @@ function openMessage(type){
 
     const messages = {
 
-        rose:{
-            title:"🌹 Rose",
-            text:"Can I write here?"
-        },
+    strawberry: {
+        title: "🍓 Apology",
+        text: "This is where your apology goes. Explain what happened, why it hurt her, and what you'll do differently."
+    },
 
-        tulip:{
-            title:"🌷 Tulip",
-            text:"Write a favorite memory here."
-        },
+    rose: {
+        title: "🌹 Admiration",
+        text: "This is where you write everything you admire about her."
+    },
 
-        bougainvillea:{
-            title:"🌺 Bougainvillea",
-            text:"Write what she taught you."
-        },
+    tulip: {
+        title: "🌷 Gratefulness",
+        text: "This is where you thank her for the things she's done for you."
+    },
 
-        orchid:{
-            title:"🌸 Orchid",
-            text:"Your apology goes here."
-        }
-    };
+    bougainvillea: {
+        title: "🌺 Memories",
+        text: "This is where you tell your favorite memories together."
+    },
+
+    orchid: {
+        title: "🌸 Inspiration",
+        text: "This is where you tell her how she has inspired you to grow."
+    }
+};
 
     title.innerText =
     messages[type].title;
