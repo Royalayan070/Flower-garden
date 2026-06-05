@@ -274,29 +274,27 @@ body::before{
 /* Layout */
 
 .rose{
-    position:absolute;
     top:80px;
-    left:500px;
-    border:5px solid red;
+    left:400px;
 }
+
 .orchid{
     top:80px;
-    right:30%;
+    left:800px;
 }
 
 .tulip{
     top:250px;
-    left:18%;
+    left:250px;
 }
 
 .bougainvillea{
     top:250px;
-    right:18%;
+    left:1000px;
 }
 
 .strawberry{
-    top:370px;
-    left:50%;
-    transform:translateX(-50%);
+    top:380px;
+    left:650px;
 }
 
