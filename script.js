@@ -15,7 +15,7 @@ function openMessage(type){
 
         rose:{
             title:"🌹 Rose",
-            text:"Write what you admire about her here."
+            text:"Can I write here?"
         },
 
         tulip:{
