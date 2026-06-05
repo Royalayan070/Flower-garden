@@ -16,50 +16,82 @@
     <div class="particles"></div>
 
     <h1 class="title">
-        A Small Garden For My Favorite Person 🌙
+        A Garden Of Things I Wanted To Tell You 🌸
     </h1>
 
     <p id="progress">
         0 / 5 petals collected 🌸
     </p>
 
-    <div class="garden">
+   <div id="moonContainer">
 
-        <img src="images/strawberry.png"
-             class="flower"
-             onclick="openMessage('strawberry', event)"
-             alt="Strawberry">
+    <img src="images/moon.png"
+         id="moon"
+         onclick="showFinalMessage()"
+         alt="Moon">
+
+    <p class="flower-label">Moonlight</p>
+
+</div>
+
+<div class="garden">
+
+    <div class="flower-wrapper rose">
 
         <img src="images/rose.png"
              class="flower"
              onclick="openMessage('rose', event)"
              alt="Rose">
 
-        <img src="images/tulip.png"
-             class="flower"
-             onclick="openMessage('tulip', event)"
-             alt="Tulip">
+        <p class="flower-label">Admiration</p>
 
-        <img src="images/bougainvillea.png"
-             class="flower"
-             onclick="openMessage('bougainvillea', event)"
-             alt="Bougainvillea">
+    </div>
+
+    <div class="flower-wrapper orchid">
 
         <img src="images/orchid.png"
              class="flower"
              onclick="openMessage('orchid', event)"
              alt="Orchid">
 
-    </div>
-
-    <div id="moonContainer">
-
-        <img src="images/moon.png"
-             id="moon"
-             onclick="showFinalMessage()"
-             alt="Moon">
+        <p class="flower-label">Inspiration</p>
 
     </div>
+
+    <div class="flower-wrapper tulip">
+
+        <img src="images/tulip.png"
+             class="flower"
+             onclick="openMessage('tulip', event)"
+             alt="Tulip">
+
+        <p class="flower-label">Gratefulness</p>
+
+    </div>
+
+    <div class="flower-wrapper bougainvillea">
+
+        <img src="images/bougainvillea.png"
+             class="flower"
+             onclick="openMessage('bougainvillea', event)"
+             alt="Bougainvillea">
+
+        <p class="flower-label">Memories</p>
+
+    </div>
+
+    <div class="flower-wrapper strawberry">
+
+        <img src="images/strawberry.png"
+             class="flower"
+             onclick="openMessage('strawberry', event)"
+             alt="Strawberry">
+
+        <p class="flower-label">Apology</p>
+
+    </div>
+
+</div>
 
     <div id="popup" class="popup">
 
