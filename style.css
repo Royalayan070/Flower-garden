@@ -300,3 +300,6 @@ body::before{
     left:50%;
     transform:translateX(-50%);
 }
+.rose{
+    border:5px solid red !important;
+}
