@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Favorite Person 🌙</title>
+    <title>A Small Garden For My Favorite Person 🌙</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="particles"></div>
+    <div class="particles"></div>
 
-<h1 class="title">A Small Garden For My most Valuable and Favorite Person 🌙</h1>
+    <h1 class="title">
+        A Small Garden For My Favorite Person 🌙
+    </h1>
 
-<div class="garden">
+    <p id="progress">
+        0 / 5 petals collected 🌸
+    </p>
 
-    <img src="images/rose.png"
-         class="flower"
-         onclick="openMessage('rose')">
+    <div class="garden">
 
-    <img src="images/tulip.png"
-         class="flower"
-         onclick="openMessage('tulip')">
+        <img src="images/strawberry.png"
+             class="flower"
+             onclick="openMessage('strawberry', event)"
+             alt="Strawberry">
 
-    <img src="images/bougainvillea.png"
-         class="flower"
-         onclick="openMessage('bougainvillea')">
+        <img src="images/rose.png"
+             class="flower"
+             onclick="openMessage('rose', event)"
+             alt="Rose">
 
-    <img src="images/orchid.png"
-         class="flower"
-         onclick="openMessage('orchid')">
+        <img src="images/tulip.png"
+             class="flower"
+             onclick="openMessage('tulip', event)"
+             alt="Tulip">
 
-</div>
+        <img src="images/bougainvillea.png"
+             class="flower"
+             onclick="openMessage('bougainvillea', event)"
+             alt="Bougainvillea">
 
-<div id="moonContainer">
-    <img src="images/moon.png"
-         id="moon"
-         onclick="showFinalMessage()">
-</div>
-
-<div id="popup" class="popup">
-
-    <div class="popup-content">
-
-        <span class="close"
-              onclick="closePopup()">
-              ×
-        </span>
-
-        <h2 id="popupTitle"></h2>
-
-        <p id="popupText"></p>
+        <img src="images/orchid.png"
+             class="flower"
+             onclick="openMessage('orchid', event)"
+             alt="Orchid">
 
     </div>
 
-</div>
+    <div id="moonContainer">
 
-<script src="script.js"></script>
+        <img src="images/moon.png"
+             id="moon"
+             onclick="showFinalMessage()"
+             alt="Moon">
+
+    </div>
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close"
+                  onclick="closePopup()">
+                  ×
+            </span>
+
+            <h2 id="popupTitle"></h2>
+
+            <p id="popupText"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
