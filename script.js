@@ -68,17 +68,11 @@ function closePopup(){
 
 function showFinalMessage(){
 
-    document
-    .getElementById("popupTitle")
-    .innerText =
-    "🌙 One Last Thing";
+    document.getElementById("popupTitle").innerText =
+    "🌙 Moonlight";
 
-    document
-    .getElementById("popupText")
-    .innerText =
-    "Thank you for reading all of this. I made it because you matter to me. You don't have to respond right away—I just wanted you to know how much you mean to me.";
-
-    document
-    .getElementById("popup")
-    .style.display="block";
+    document.getElementById("popupText").innerText =
+    "Every flower here carries a piece of what I wanted to tell you. My apology, my admiration, my gratitude, the memories we share, and the ways you've inspired me. None of this was made because I expect immediate forgiveness. I made it because you matter to me, and because I never want you to doubt that. Thank you for taking the time to walk through this little garden.";
+    
+    document.getElementById("popup").style.display = "block";
 }
