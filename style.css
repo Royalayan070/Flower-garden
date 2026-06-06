@@ -297,4 +297,34 @@ body::before{
     top:380px;
     left:650px;
 }
+@media(max-width:768px){
 
+    .garden{
+        position:static;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        gap:40px;
+        height:auto;
+        margin-top:30px;
+    }
+
+    .flower-wrapper{
+        position:static;
+        width:40%;
+    }
+
+    .flower{
+        width:90px;
+    }
+
+    .strawberry{
+        transform:none;
+    }
+
+}
+.title{
+    padding:0 15px;
+    font-size:clamp(1.5rem,4vw,3rem);
+}
